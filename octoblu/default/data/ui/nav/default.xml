@@ -1,0 +1,7 @@
+<nav color="#5379AF">
+  <view name="ica_stats" default='true' />
+
+  <view name="dashboards" />
+  <view name="search" />
+
+</nav>

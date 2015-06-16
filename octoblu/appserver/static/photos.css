@@ -1,0 +1,40 @@
+.single-value:before {
+    font-family: "Splunk Icons";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 48px;
+}
+
+.severe.single-value:before {
+    content: url('/static/app/octoblu/images/angry.gif')
+}
+
+.high.single-value:before {
+    content: url('/static/app/octoblu/images/worried2.png')
+}
+
+.elevated.single-value:before {
+    content: url('/static/app/octoblu/images/worried1.png')
+}
+
+.low.single-value:before {
+    content: url('/static/app/octoblu/images/PhotoFrame.gif')
+}
+
+.guarded.single-value:before {
+    content: "\0049";
+    color: #4da6df;
+}
+
+.icon-only.single-value:before {
+    font-size: 65px;
+}
+
+.icon-only .single-result {
+    display: none;
+}
+
+.refresh-time-indicator {
+    display: none;
+}

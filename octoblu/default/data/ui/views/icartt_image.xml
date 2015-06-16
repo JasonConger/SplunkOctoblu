@@ -1,0 +1,16 @@
+<dashboard stylesheet="photos.css">
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>sourcetype="ICA:RTT" | stats latest(ICARTT) AS ICARTT | rangemap field=ICARTT low=0-30 elevated=30-70 default=severe</query>
+          <earliest>rt-5s</earliest>
+          <latest>rtnow</latest>
+        </search>
+        <option name="classField">range</option>
+        <option name="field">ICARTT</option>
+        <option name="additionalClass">icon-only</option>
+      </single>
+    </panel>
+  </row>
+</dashboard>
